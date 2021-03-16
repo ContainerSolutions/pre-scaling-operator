@@ -97,10 +97,6 @@ jobs:
           kubectl cluster-info --context kind-kind
           kind get kubeconfig --internal >$HOME/.kube/config
           kubectl get nodes
-
-      - name: Load image on the nodes of the cluster
-        run: |
-          kind load docker-image --name=kind containersol/pre-scaling-operator:ci              
  
       - name: Deleting KinD cluster
         if: ${{ always() }}
