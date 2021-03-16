@@ -60,7 +60,7 @@ func (r *ScalingStateReconciler) Reconcile(ctx context.Context, req ctrl.Request
 	if err != nil {
 		// If we encounter an error trying to retrieve the state definitions,
 		// we will not be able to compute anything else.
-		log.Error(err, "Failed to get ClusterStateDefinitions")
+		log.Error(err, "Failed to get ClusterStateDefinition")
 		return ctrl.Result{}, err
 	}
 
