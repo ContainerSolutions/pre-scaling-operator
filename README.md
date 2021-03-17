@@ -1,8 +1,8 @@
 # Pre-Scaling Kubernetes Operator
 
-Build out of necessity, the Operator helps pre-scale applications in anticipation of load.
+Built out of necessity, the Operator helps pre-scale applications in anticipation of load.
 
-At it's core it essentially manages a cluster / namespace "state", 
+At its core, it manages a cluster / namespace "state", 
 which triggers scaling of applications to the desired replicas for that specific state.
 
 For example, a cluster could have 2 states, `business-as-usual`, and `peak`.
